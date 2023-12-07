@@ -1,40 +1,40 @@
-# Realtime chatbot Coding the Curbs
+# Hallo Strandeiland - Atomic Design
 
-![image](https://github.com/MokhtarAkle/connecting-people-realtime-web-app/assets/45001009/7dc4c51e-8530-478b-91ae-64a59788d4d8)
+<img width="1352" alt="Schermafbeelding 2023-11-29 om 21 29 23" src="https://github.com/Stefan-Espant/dont-repeat-yourself-component-library/assets/89298385/50839b19-1974-4ae4-8476-015bd07444a7">
 
-![image](https://github.com/MokhtarAkle/connecting-people-realtime-web-app/assets/45001009/40c60c1c-bc08-491c-bfe5-91fbf21def18)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Inhoudsopgave
+### Creating a project
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+If you're seeing this, you've probably already done this step. Congrats!
 
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Beschrijving
-Tijdens de huidige sprint moesten we in groepjes werken aan een nieuwe user story gebaseerd op de implementatie van een realtime web app. Mokhtar en Fatih hebben samen tijdens deze sprint gewerkt aan het maken van een chatbot waar je realtime vragen aan kan stellen en antwoorden van terug krijgt.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Kenmerken
-### Node
-Node is een onderliggend framework dat er voor zorgt dat we server side code kunnen schrijven en gebruik kunnen maken van verschillende modules zoals Express, socket.io en EJS
+### Developing
 
-### Express
-We gebruiken Express als framework voor onze projecten. Met express kunnen we verschillende routes aanmaken waarin we content kunnen aanbieden als webpaginas. Ook kunnen we gebruik maken van een view engine door middel van Express om de opmaak van de HTML makkelijker te maken. Verder kan je statische bestanden aanbieden door een statische route aan te geven via express. Door middel van de statische mappen
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### EJS
-De view engine die we gebruiken is EJS. Hiermee kan je makkelijk templates van HTML maken terwijl je direct in combinatie hiermee JS kan gebruiken.
+```bash
+npm run dev
 
-### Socket.io
-Een low latency communicatie frame waarmee je chat app kan maken.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Installatie
-Gebruik ``` npm install ``` om dependencies te downloaden, maak vervolgens gebruik van ``` npm start ``` om de applicatie te starten of ``` npm run dev ``` om een nodemon enviroment op te starten.
+### Building
 
-## Bronnen
-Gebaseerd op: https://saheedcodes.hashnode.dev/how-to-build-a-chatbot-using-nodejs-and-socketio
-## Licentie
+To create a production version of your app:
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

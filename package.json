@@ -1,21 +1,21 @@
 {
-  "name": "first-realtime-web-appb",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "ctc-module": "^1.0.1",
-    "dotenv": "^16.0.3",
-    "ejs": "^3.1.8",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "node-fetch": "^2.6.11",
-    "socket.io": "^4.6.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  }
+	"name": "dont-repeat-yourself-component-library",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.27.4",
+		"prettier": "^3.0.0",
+		"prettier-plugin-svelte": "^3.0.0",
+		"svelte": "^4.2.7",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }
