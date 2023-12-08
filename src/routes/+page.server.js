@@ -21,6 +21,9 @@ export async function load() {
         url
       }
     }
+    asset(where: {id: "clpw2li67f3bz0aw4go9cr804"}){
+      url
+    }
   }
   `
 

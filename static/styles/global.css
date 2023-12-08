@@ -126,8 +126,50 @@ nav figcaption {
     width: clamp(8rem, 100%, 10rem);
 }
 
+.flickity-viewport{
+    width: 98vw;
+}
 
+.flickity-prev-next-button {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    opacity: 0.6;
+  }
+  .flickity-prev-next-button:hover {
+    background: transparent;
+    opacity: 1;
+  }
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  .flickity-prev-next-button.no-svg {
+    color: white;
+  }
+  /* closer to edge */
+  .flickity-prev-next-button.previous { left: 0; }
+  .flickity-prev-next-button.next { right: 3em !important; }
+  /* hide disabled button */
+  .flickity-prev-next-button:disabled {
+    display: none;
+  }
 
+  .carousel-cell.is-selected img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: none;
+            filter: none;
+  }
+
+  .carousel-cell.is-selected > div > p, .carousel-cell.is-selected > div > a > span{
+        display: inline !important; 
+    }
+    .carousel-cell.is-selected > div > .layers::before,
+    .carousel-cell.is-selected > div > .layers::after {
+        display: block !important; 
+    }
 @media (min-width: 440px) {
     .grid-overview article {
         grid-template-columns: 1fr 1fr;
@@ -157,3 +199,15 @@ nav figcaption {
         visibility: visible;
     }
 }
+
+@media screen and ( min-width: 768px ) {
+    .carousel-cell {
+      height: 400px;
+    }
+  }
+  
+  @media screen and ( min-width: 960px ) {
+    .carousel-cell {
+      width: 60%;
+    }
+  }
