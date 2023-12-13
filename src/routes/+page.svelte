@@ -36,11 +36,17 @@
 		let audioselect = document.querySelector("#audio-source");
 		let hoverinput = document.querySelector(".main-carousel")
 		hoverinput.addEventListener('mouseover', () =>{
+		if(audioselect.paused == true){
 			audioselect.muted = false;
 			audioselect.volume = 0.05;
 			audioselect.controls = true;
 			audioselect.play()
-		})
+		}
+		else{
+			audioselect.pause();
+		}
+	})
+
         return () => {
             // Verwijder event listeners bij het opruimen van de component
             searchInput.form.removeEventListener('submit', searchWishes);
