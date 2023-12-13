@@ -13,17 +13,17 @@
         object-fit: cover;
         margin-bottom: var(--unit-small);
         display: block;
-  max-width: 100%;
-  max-height: 100%;
-  /* dim unselected */
-  opacity: 0.7;
-  -webkit-transform: scale(0.85);
-          transform: scale(0.85);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
-          border-radius: 5px;
+        max-width: 100%;
+        max-height: 100%;
+        /* dim unselected */
+        opacity: 0.7;
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+        transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+        border-radius: 5px;
     }
 
 
