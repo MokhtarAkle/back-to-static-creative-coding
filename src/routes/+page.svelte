@@ -39,7 +39,6 @@
 		if(audioselect.paused == true){
 			audioselect.muted = false;
 			audioselect.volume = 0.05;
-			audioselect.controls = true;
 			audioselect.play()
 		}
 		else{
@@ -78,6 +77,7 @@
 		margin: auto;
 		padding: var(--unit-default);
 		background-color: var(--color-accent-75);
+		cursor: url(../lib/assets/glitchcursor.ani), auto;
 	}
 
 	article {
