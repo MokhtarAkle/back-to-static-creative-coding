@@ -160,7 +160,6 @@
   z-index: 2;
   letter-spacing: 10px;
 
-  /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
 
@@ -449,7 +448,6 @@
 }
 
 .movement {
-  /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
   position: relative;
   animation: movement 8s step-end infinite;
 }
