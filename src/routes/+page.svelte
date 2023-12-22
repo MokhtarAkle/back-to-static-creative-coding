@@ -30,7 +30,9 @@
   			// options
   			cellAlign: 'center',
   			contain: true,
-			wrapAround: true
+			wrapAround: true,
+			lazyLoad: 2,
+			accessibility: true
 		});
 
 		let audioselect = document.querySelector("#audio-source");
@@ -66,7 +68,7 @@
         </article>
     </section>
 	<audio loop id="audio-source" muted>
-		<source src={data.asset.url} type="audio/mp3">
+		<source src={data.asset.url} type="audio/mp3">		
 	</audio>
 </main>
 
